@@ -1,4 +1,14 @@
 {
+    "routes": [
+        {
+            "route": "/profile",
+            "allowedRoles": ["authenticated"]
+        },
+        {
+            "route": "/login",
+            "rewrite": "/.auth/login/ad"
+        }
+    ],
     "navigationFallback": {
         "rewrite": "/index.html"
     }
